@@ -6,11 +6,17 @@
 
 :root {
     --rajdhani-font: 'Rajdhani', sans-serif;
+    --roboto-condensed-font: 'Roboto Condensed', sans-serif;
     --theme-default-color: #00bcd4;
     --text-default-color: #4e4e4e;
-    --component-default-color: #fff;
-    --background-default-color: #fafafa; 
+    --border-default-color: #cecece;
 }
+
+/**
+ * =================================================================================
+ * BASE
+ * =================================================================================
+ */
 
 *,
 *::before,
@@ -20,19 +26,13 @@
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .004) !important;
 }
 
-/**
- * =================================================================================
- * BASE
- * =================================================================================
- */
-
 html {
     height: 100%;
     min-height: 100%;
 }
 
 body {
-    background: var(--background-default-color);
+    background: #fafafa;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -45,7 +45,7 @@ body {
  */
 
 .header {
-    background: var(--component-default-color);
+    background: #fff;
     box-shadow: 0px 1px 2px 0px rgba(206, 206, 206, 1);
     height: 64px;
     width: 100%;
@@ -130,18 +130,58 @@ body {
 
 /**
  * =================================================================================
+ * FOOTER
+ * =================================================================================
+ */
+
+.footer {
+    background: #fff;
+    border-top: 1px solid #cecece;
+    box-shadow: 0px -1px 2px 0px rgba(206, 206, 206, 1);
+    margin-top: auto;
+    padding: 14px 0 14px 0;
+    width: 100%;
+}
+
+.footer__wrapper {
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.copy {
+    color: var(--text-default-color);
+    font-family: var(--roboto-condensed-font);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.copy__link {
+    color: var(--theme-default-color);
+    text-decoration: none;
+}
+
+.copy__link:hover {
+    text-decoration: underline;
+}
+
+/**
+ * =================================================================================
  * MEDIA QUERIES (MOBILE FIRST)
  * =================================================================================
  */
 
 @media screen and (min-width: 768px) {
-    .header__wrapper {
+    .header__wrapper,
+    .footer__wrapper {
         padding: 0 20px 0 20px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .header__wrapper {
+    .header__wrapper,
+    .footer__wrapper {
         max-width: 1200px;
         padding: 0 40px 0 40px;
     }
