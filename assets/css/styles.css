@@ -130,14 +130,37 @@ body {
 
 /**
  * =================================================================================
+ * INDEX (MAIN)
+ * =================================================================================
+ */
+
+.main {
+    width: 100%;
+    margin: 30px 0 110px 0;
+}
+
+.section {
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+    width: 100%;
+}
+
+.section__heading {
+    font-family: var(--rajdhani-font);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-default-color);
+}
+
+/**
+ * =================================================================================
  * FOOTER
  * =================================================================================
  */
 
 .footer {
     background: #fff;
-    border-top: 1px solid #cecece;
-    box-shadow: 0px -1px 2px 0px rgba(206, 206, 206, 1);
+    border-top: 1px solid var(--border-default-color);
     margin-top: auto;
     padding: 14px 0 14px 0;
     width: 100%;
@@ -173,14 +196,18 @@ body {
  */
 
 @media screen and (min-width: 768px) {
+
     .header__wrapper,
+    .section,
     .footer__wrapper {
         padding: 0 20px 0 20px;
     }
 }
 
 @media screen and (min-width: 1200px) {
+
     .header__wrapper,
+    .section,
     .footer__wrapper {
         max-width: 1200px;
         padding: 0 40px 0 40px;
