@@ -1,0 +1,99 @@
+:root {
+    --rajdhani-font: 'Rajdhani', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box !important;
+    text-rendering: optimizeLegibility !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004) !important;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background: #fafafa;
+}
+
+.header {
+    height: 64px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(206, 206, 206, 1);
+
+}
+
+.header__wrapper {
+    padding: 0 10px 0 10px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__stick {
+    display: flex;
+}
+
+.header__aside-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+}
+
+.aside-btn__icon {
+    font-size: 22px;
+    color: #00bcd4;
+}
+
+.header__logo {
+    margin: 0 0 0 8px;
+    display: flex;
+    align-items: center;
+    height: 44px;
+}
+
+.logo__heading {
+    font-family: var(--rajdhani-font);
+    font-size: 22px;
+    font-weight: 700;
+    color: #4e4e4e;
+}
+
+.header__user-nav {
+    display: flex;
+    align-items: center;
+    height: 44px;
+}
+
+.user-nav__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    width: 28px;
+    margin: 0 8px 0 0;
+}
+
+.user-nav__icon {
+    font-size: 16px;
+    color: #424242;
+}
+
+.user-nav__profile-img {
+    height: 38px;
+    width: 38px;
+    background: #00bcd4;
+    border-radius: 50%;
+}
