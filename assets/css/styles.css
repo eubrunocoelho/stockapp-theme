@@ -131,14 +131,20 @@ body {
 
 /**
  * =================================================================================
- * INDEX (MAIN)
+ * MAIN
  * =================================================================================
  */
 
 .main {
-    width: 100%;
     margin: 30px 0 110px 0;
+    width: 100%;
 }
+
+/**
+ * =================================================================================
+ * SECTION
+ * =================================================================================
+ */
 
 .section {
     margin: 0 auto;
@@ -147,13 +153,19 @@ body {
 }
 
 .section__heading {
-    padding: 7px 0 7px 0;
+    color: var(--text-default-color);
     font-family: var(--rajdhani-font);
     font-size: 20px;
     font-weight: 700;
-    color: var(--text-default-color);
     margin: 0 0 10px 0;
+    padding: 7px 0 7px 0;
 }
+
+/**
+ * =================================================================================
+ * CARDS
+ * =================================================================================
+ */
 
 .cards {
     display: grid;
@@ -162,39 +174,39 @@ body {
 }
 
 .card {
+    align-items: center;
     background: var(--background-default-color);
     border: 1px solid var(--border-default-color);
-    height: 100px;
     display: flex;
-    align-items: center;
+    height: 100px;
     justify-content: space-between;
     padding: 0 10px 0 20px;
 }
 
 .card__amount {
-    font-family: var(--rajdhani-font);
-    font-weight: 700;
-    font-size: 27px;
     color: var(--text-default-color);
+    font-family: var(--rajdhani-font);
+    font-size: 27px;
+    font-weight: 700;
     margin: 0 0 7px 0;
 }
 
 .card__description {
-    font-family: var(--roboto-condensed-font);
-    font-weight: 400;
-    font-size: 15px;
     color: var(--text-default-color);
+    font-family: var(--roboto-condensed-font);
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .card__icon {
-    height: 60px;
-    width: 60px;
+    align-items: center;
     background: var(--theme-default-color);
-    opacity: .61;
     border-radius: 50%;
     display: flex;
+    height: 60px;
     justify-content: center;
-    align-items: center;
+    opacity: .61;
+    width: 60px;
 }
 
 .card__icon-inside {
