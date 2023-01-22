@@ -11,6 +11,7 @@
     --text-default-color: #4e4e4e;
     --background-default-color: #fff;
     --border-default-color: #cecece;
+    --danger-default-color: #e82646;
 }
 
 /**
@@ -37,6 +38,16 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+}
+
+/**
+ * =================================================================================
+ * MODIFIERS
+ * =================================================================================
+ */
+
+.--text-danger {
+    color: var(--danger-default-color) !important;
 }
 
 /**
@@ -147,7 +158,7 @@ body {
  */
 
 .section {
-    margin: 0 auto;
+    margin: 0 auto 30px;
     padding: 0 10px 0 10px;
     width: 100%;
 }
@@ -212,6 +223,52 @@ body {
 .card__icon-inside {
     color: #fff;
     font-size: 32px;
+}
+
+/*
+* !IMPORTANT
+*/
+
+.details__card {
+    padding: 20px 20px 20px 20px;
+    background: #fff;
+    border: 1px solid var(--border-default-color);
+}
+
+.details__heading {
+    font-family: var(--rajdhani-font);
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0 0 6px 0;
+    color: var(--text-default-color);
+    border-bottom: 1px solid var(--border-default-color);
+}
+
+.details__content {
+    padding: 10px 0 10px 0;
+}
+
+.details__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    padding: 6px 0 6px 0;
+}
+
+.details__item-description {
+    color: var(--text-default-color);
+    font-family: var(--roboto-condensed-font);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.details__item-current {
+    font-family: var(--rajdhani-font);
+    color: var(--text-default-color);
+    font-size: 19px;
+    font-weight: 700;
 }
 
 /**
