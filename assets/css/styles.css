@@ -1,5 +1,15 @@
+/**
+ * =================================================================================
+ * VARIABLES
+ * =================================================================================
+ */
+
 :root {
     --rajdhani-font: 'Rajdhani', sans-serif;
+    --theme-default-color: #00bcd4;
+    --text-default-color: #4e4e4e;
+    --component-default-color: #fff;
+    --background-default-color: #fafafa; 
 }
 
 *,
@@ -10,34 +20,46 @@
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .004) !important;
 }
 
+/**
+ * =================================================================================
+ * BASE
+ * =================================================================================
+ */
+
 html {
     height: 100%;
     min-height: 100%;
 }
 
 body {
+    background: var(--background-default-color);
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    background: #fafafa;
 }
 
+/**
+ * =================================================================================
+ * HEADER
+ * =================================================================================
+ */
+
 .header {
+    background: var(--component-default-color);
+    box-shadow: 0px 1px 2px 0px rgba(206, 206, 206, 1);
     height: 64px;
     width: 100%;
-    background: #fff;
-    box-shadow: 0px 1px 2px 0px rgba(206, 206, 206, 1);
 
 }
 
 .header__wrapper {
-    padding: 0 10px 0 10px;
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 100%;
     justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+    width: 100%;
 }
 
 .header__stick {
@@ -45,55 +67,82 @@ body {
 }
 
 .header__aside-btn {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     height: 44px;
+    justify-content: center;
     width: 44px;
 }
 
 .aside-btn__icon {
+    color: var(--theme-default-color);
     font-size: 22px;
-    color: #00bcd4;
 }
 
 .header__logo {
-    margin: 0 0 0 8px;
-    display: flex;
     align-items: center;
+    display: flex;
     height: 44px;
+    margin: 0 0 0 8px;
 }
 
 .logo__heading {
+    color: var(--text-default-color);
     font-family: var(--rajdhani-font);
     font-size: 22px;
     font-weight: 700;
-    color: #4e4e4e;
 }
 
 .header__user-nav {
-    display: flex;
     align-items: center;
+    display: flex;
     height: 44px;
 }
 
-.user-nav__icons {
+.user-nav__wrapper {
     display: flex;
+}
+
+.user-nav__icons {
     align-items: center;
-    justify-content: center;
+    display: flex;
     height: 28px;
-    width: 28px;
+    justify-content: center;
     margin: 0 8px 0 0;
+    width: 28px;
+}
+
+.user-nav__icons:last-child {
+    margin: 0 20px 0 0;
 }
 
 .user-nav__icon {
-    font-size: 16px;
     color: #424242;
+    font-size: 16px;
 }
 
 .user-nav__profile-img {
+    background: var(--theme-default-color);
+    border-radius: 50%;
     height: 38px;
     width: 38px;
-    background: #00bcd4;
-    border-radius: 50%;
+}
+
+/**
+ * =================================================================================
+ * MEDIA QUERIES (MOBILE FIRST)
+ * =================================================================================
+ */
+
+@media screen and (min-width: 768px) {
+    .header__wrapper {
+        padding: 0 20px 0 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header__wrapper {
+        max-width: 1200px;
+        padding: 0 40px 0 40px;
+    }
 }
