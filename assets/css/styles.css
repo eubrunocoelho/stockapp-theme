@@ -163,17 +163,17 @@ body {
 
 /**
  * =================================================================================
- * CARDS
+ * CARDS ACTIVITIES
  * =================================================================================
  */
 
-.cards {
+.cards__activities {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 20px;
 }
 
-.card {
+.activities__card {
     align-items: center;
     background: var(--background-default-color);
     border: 1px solid var(--border-default-color);
@@ -258,8 +258,7 @@ body {
  */
 
 @media screen and (min-width: 416px) {
-
-    .cards {
+    .cards__activities {
         column-gap: 20px;
         grid-template-columns: 1fr 1fr;
     }
@@ -295,7 +294,7 @@ body {
 }
 
 @media screen and (min-width: 816px) {
-    .cards {
+    .cards__activities {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -311,8 +310,9 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+
     .header__wrapper,
-    .section, 
+    .section,
     .footer__wrapper {
         padding: 0 30px 0 30px;
     }
@@ -327,7 +327,7 @@ body {
         padding: 0 40px 0 40px;
     }
 
-    .cards {
+    .cards__activities {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
