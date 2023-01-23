@@ -239,24 +239,23 @@ body {
 
 .details {
     width: 100%;
-    background: aqua;
 }
 
 .details__card {
-    padding: 20px 20px 20px 20px;
     background: #fff;
     border: 1px solid var(--border-default-color);
-    width: 100%;
     height: 100%;
+    padding: 20px 20px 20px 20px;
+    width: 100%;
 }
 
 .details__heading {
+    border-bottom: 1px solid var(--border-default-color);
+    color: var(--text-default-color);
     font-family: var(--rajdhani-font);
     font-weight: 700;
     font-size: 20px;
     padding: 0 0 6px 0;
-    color: var(--text-default-color);
-    border-bottom: 1px solid var(--border-default-color);
 }
 
 .details__content {
@@ -264,12 +263,12 @@ body {
 }
 
 .details__item {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
     height: 30px;
-    width: 100%;
+    justify-content: space-between;
     padding: 6px 0 6px 0;
+    width: 100%;
 }
 
 .details__item-description {
@@ -280,8 +279,8 @@ body {
 }
 
 .details__item-current {
-    font-family: var(--rajdhani-font);
     color: var(--text-default-color);
+    font-family: var(--rajdhani-font);
     font-size: 19px;
     font-weight: 700;
 }
@@ -300,31 +299,31 @@ body {
 
 .details__table {
     margin: 10px 0 0 0;
-    width: 100%;
-    table-layout: fixed;
     min-width: 362px;
+    table-layout: fixed;
+    width: 100%;
 }
 
 .details__table-thead {
+    color: var(--text-default-color);
     font-family: var(--rajdhani-font);
     font-size: 15px;
     font-weight: 700;
     width: 100%;
-    color: var(--text-default-color);
 }
 
 .details__table-tbody {
+    color: var(--text-default-color);
     font-family: var(--roboto-condensed-font);
     font-size: 14px;
-    color: var(--text-default-color);
     font-weight: 400;
     width: 100%;
 }
 
 .details__table-tr {
+    border-bottom: 1px solid var(--border-default-color);
     display: flex;
     padding: 6px 0 6px 0;
-    border-bottom: 1px solid var(--border-default-color);
 }
 
 .details__table-tr th:first-child,
@@ -412,8 +411,8 @@ body {
     }
 
     .details__wrapper {
-        flex-direction: row;
         column-gap: 20px;
+        flex-direction: row;
     }
 
     .details {
