@@ -12,6 +12,7 @@
     --background-default-color: #fff;
     --border-default-color: #cecece;
     --danger-default-color: #e82646;
+    --link-default-color: #0879ac;
 }
 
 /**
@@ -48,6 +49,15 @@ body {
 
 .--text-danger {
     color: var(--danger-default-color) !important;
+}
+
+.--default-link {
+    color: var(--link-default-color) !important;
+    text-decoration: none !important;
+}
+
+.--default-link:hover {
+    text-decoration: underline !important;
 }
 
 /**
