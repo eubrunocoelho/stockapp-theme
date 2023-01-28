@@ -346,21 +346,22 @@ body {
 * !IMPORTANT
 */
 
-.section__filter {
-    padding: 10px 0 10px 0;
+.section__sub-heading {
     border-bottom: 1px solid var(--border-default-color);
     border-top: 1px solid var(--border-default-color);
+    padding: 10px 0 10px 0;
 }
 
-.filter__wrapper {
+.sub-heading__wrapper {
     display: flex;
     flex-direction: column;
+    row-gap: 20px;
 }
 
-.filter__search {
-    width: 100%;
+.sub-heading__search {
     height: 40px;
     position: relative;
+    width: 100%;
 }
 
 .search-box {
@@ -379,7 +380,7 @@ body {
     color: var(--text-default-color);
 }
 
-.search-box__button {
+.search-btn {
     position: absolute;
     left: 0;
     height: 40px;
@@ -389,6 +390,80 @@ body {
     background: none;
     font-size: 18px;
     line-height: 0;
+}
+
+.sub-heading__stick {
+    display: flex;
+    column-gap: 10px;
+}
+
+.sub-heading__order-by {
+    position: relative;
+    display: flex;
+    width: max-content;
+    height: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.sub-heading__order-by::after {
+    font: var(--fa-font-solid);
+    font-size: 15px;
+    content: '\f107';
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    right: 0;
+    background: none;
+    pointer-events: none;
+}
+
+.select-box {
+    width: max-content;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: var(--rajdhani-font);
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    flex: 1;
+    padding: 0 40px 0 20px;
+    color: #fff;
+    background: #00bcd4;
+    background-image: none;
+    cursor: pointer;
+    width: max-content;
+}
+
+.register-btn {
+    position: relative;
+    background: #00bcd4;
+    border: none;
+    font-family: var(--rajdhani-font);
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0 20px 0 40px;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.register-btn__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
 }
 
 /**/

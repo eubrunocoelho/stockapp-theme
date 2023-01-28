@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./select.css">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
@@ -44,20 +43,29 @@
             <div class="section__heading">
                 <h1>Livros</h1>
             </div>
-            <div class="section__filter">
-                <div class="filter__wrapper">
-                    <form class="filter__search">
+            <div class="section__sub-heading">
+                <div class="sub-heading__wrapper">
+                    <form class="sub-heading__search">
                         <input type="text" class="search-box" placeholder="Pesquisar...">
-                        <button class="search-box__button">
+                        <button class="search-btn">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </form>
-                    <div class="filter__buttons">
-                        <div class="select">
-                            <select>
-                                <option value="1">Olá, mundo!</option>
+                    <div class="sub-heading__stick">
+                        <div class="sub-heading__order-by">
+                            <select class="select-box">
+                                <option>Ordenar:</option>
+                                <option>a-Z</option>
+                                <option>Unidades</option>
+                                <option>Vendas</option>
                             </select>
                         </div>
+                        <button class="register-btn">
+                            <div class="register-btn__icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            Novo
+                        </button>
                     </div>
                 </div>
             </div>
