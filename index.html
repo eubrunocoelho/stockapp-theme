@@ -7,150 +7,24 @@
     <title>StockApp - Gerenciador de Estoque</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <div class="header__wrapper">
-            <div class="header__stick">
-                <div class="header__aside-btn">
-                    <i class="fa-solid fa-bars aside-btn__icon"></i>
+        <nav class="nav container">
+            <div class="nav__stick">
+                <div class="nav__menu-button">
+                    <a href="./index.html"><i class="fa-solid fa-bars menu-button__icon"></i></a>
                 </div>
-                <div class="header__logo">
-                    <h1 class="logo__heading">StockApp</h1>
-                </div>
+                <a href="./index.html" class="nav__logo">StockApp</a>
             </div>
-            <div class="header__user-nav">
-                <div class="user-nav__wrapper">
-                    <div class="user-nav__icons">
-                        <i class="fa-solid fa-bell user-nav__icon"></i>
-                    </div>
-                    <div class="user-nav__icons">
-                        <i class="fa-solid fa-gear user-nav__icon"></i>
-                    </div>    
-                </div>            
-                <div class="user-nav__profile-img">
-                </div>
+            <div class="nav__user-area">
+                <div class="user-area__ellipse"></div>
             </div>
-        </div>
+        </nav>
     </header>
-    <main class="main">
-        <section class="section">
-            <div class="section__heading">
-                <h1>Atividades</h1>
-            </div>
-            <div class="cards__activities">
-                <div class="activities__card">
-                    <div class="card__content">
-                        <p class="card__amount">R$58.233,92</p>
-                        <p class="card__description">Rendimento</p>
-                    </div>
-                    <div class="card__icon">
-                        <i class="fa-solid fa-dollar-sign card__icon-inside"></i>
-                    </div>
-                </div>
-                <div class="activities__card">
-                    <div class="card__content">
-                        <p class="card__amount">2.772</p>
-                        <p class="card__description">Clientes</p>
-                    </div>
-                    <div class="card__icon">
-                        <i class="fa-solid fa-user card__icon-inside"></i>
-                    </div>
-                </div>
-                <div class="activities__card">
-                    <div class="card__content">
-                        <p class="card__amount">22.527</p>
-                        <p class="card__description">Estoque</p>
-                    </div>
-                    <div class="card__icon">
-                        <i class="fa-solid fa-layer-group card__icon-inside"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="section__heading">
-                <h1>Detalhes</h1>
-            </div>
-            <div class="details__wrapper">
-                <div class="details__card details">
-                    <div class="details__heading">
-                        <h1>Estoque</h1>
-                    </div>
-                    <div class="details__content">
-                        <div class="details__item">
-                            <p class="details__item-description --text-danger">Em baixo estoque</p>
-                            <p class="details__item-current --text-danger"><a href="#" class="item-current__link --text-danger">138</a></p>
-                        </div>
-                        <div class="details__item">
-                            <p class="details__item-description">Quantiade de livros</p>
-                            <p class="details__item-current">3.788</p>
-                        </div>
-                        <div class="details__item">
-                            <p class="details__item-description">Quantidade de unidades</p>
-                            <p class="details__item-current">22.527</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="details__card best-sellers">
-                    <div class="details__heading">
-                        <h1>Livros mais vendidos</h1>
-                    </div>
-                    <div class="details-card__wrapper">
-                        <table class="details__table">
-                            <thead class="details__table-thead">
-                                <tr class="details__table-tr">
-                                    <th>Nome</th>
-                                    <th>Vendas</th>
-                                </tr>
-                            </thead>
-                            <tbody class="details__table-tbody">
-                                <tr class="details__table-tr">
-                                    <td>
-                                        <a href="#" class="--default-link">Senhor dos Anéis</a>
-                                    </td>
-                                    <td>999</td>
-                                </tr>
-                                <tr class="details__table-tr">
-                                    <td>
-                                        <a href="#" class="--default-link">The Witcher</a>
-                                    </td>
-                                    <td>902</td>
-                                </tr>
-                                <tr class="details__table-tr">
-                                    <td>
-                                        <a href="#" class="--default-link">Harry Potter e a Pedra Filosofal</a>
-                                    </td>
-                                    <td>801</td>
-                                </tr>
-                                <tr class="details__table-tr">
-                                    <td>
-                                        <a href="#" class="--default-link">O Segredo</a>
-                                    </td>
-                                    <td>773</td>
-                                </tr>
-                                <tr class="details__table-tr">
-                                    <td>
-                                        <a href="#" class="--default-link">O Pequeno Príncipe</a>
-                                    </td>
-                                    <td>552</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer__wrapper">
-            <p class="copy">Copyright © 2023 <a href="./index.html" class="copy__link">StockApp</a></p>
-        </div>
-    </footer>
 </body>
 </html>
