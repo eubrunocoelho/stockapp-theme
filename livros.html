@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.22, maximum-scale=1.0" />
+    <title>StockApp - Gerenciador de Estoque</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav container">
+            <div class="header-nav__stick">
+                <div class="header-nav__menu-button">
+                    <a href="./index.html"><i class="fa-solid fa-bars menu-button__icon"></i></a>
+                </div>
+                <a href="./index.html" class="header-nav__logo">StockApp</a>
+            </div>
+            <div class="header-nav__user-area">
+                <div class="user-area__ellipse"></div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main-heading container">
+            <h1 class="main-heading__title">#Livros</h1>
+            <span class="main-heading__breadcrumbs"><a class="breadcrumbs__link" href="./index.html">Livros</a> / <a class="breadcrumbs__link" href="./index.html">Dashboard</a></span>
+        </div>
+        <section class="section container">
+            <div class="filter">
+                <div class="filter__search fg--1">
+                    <form action="#">
+                        <input type="text" class="search__input" placeholder="Pesquisar...">
+                        <button class="search__btn">
+                            <i class="fa-solid fa-magnifying-glass btn__icon"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="filter__order-by">
+                    <select class="order-by__select">
+                        <option>a-Z</option>
+                        <option>Recentes</option>
+                        <option>Entradas</option>
+                        <option>Saídas</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-copy container">
+            <p class="copy__text">Copyright © 2023 <a href="" class="copy__link">StockApp</a>.</p>
+        </div>
+    </footer>
+</body>
+</html>
