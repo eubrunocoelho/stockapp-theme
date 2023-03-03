@@ -12,7 +12,25 @@
     --font-titillium-web: 'Titillium Web', sans-serif;
     --font-rajdhani: 'Rajdhani', sans-serif;
     --text-primary-color: #272a2d;
-    --text-disabled-color: #717c86;
+    --text-secondary-color: #717c86;
+}
+
+/**
+ * =================================================================================
+ * MODIFIERS
+ * =================================================================================
+ */
+
+.mb--30 {
+    margin-bottom: 30px !important;
+}
+
+.tc--w210 {
+    width: 210px !important;
+}
+
+.fg--1 {
+    flex-grow: 1 !important;
 }
 
 /**
@@ -138,7 +156,7 @@ body {
  * =================================================================================
  */
 
-.section-heading {
+.main-heading {
     align-items: center;
     display: flex;
     height: 34px;
@@ -147,7 +165,7 @@ body {
     margin: 0 auto 20px;
 }
 
-.section-heading__title  {
+.main-heading__title  {
     color: var(--text-primary-color);
     font-family: var(--font-rajdhani);
     font-size: 19px;
@@ -155,8 +173,8 @@ body {
     text-transform: uppercase;
 }
 
-.section-heading__breadcrumbs {
-    color: var(--text-disabled-color);
+.main-heading__breadcrumbs {
+    color: var(--text-secondary-color);
     font-family: var(--font-rajdhani);
     font-size: 15px;
     font-weight: 400;
@@ -173,15 +191,24 @@ body {
 
 /**
  * =================================================================================
- * SECTIONS - CARDS
+ * SECTION
  * =================================================================================
  */
 
-.section-cards {
+.section {
+    padding: 0 30px 0 30px;;
+}
+
+/**
+ * =================================================================================
+ * SECTION - CARDS
+ * =================================================================================
+ */
+
+.cards {
     column-gap: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 30px 0 30px;
 }
 
 .card {
@@ -192,6 +219,27 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+
+.card__summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary__description {
+    font-family: var(--font-titillium-web);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-secondary-color);
+    margin: 0 0 10px 0;
+}
+
+.summary__number {
+    font-family: var(--font-rajdhani);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary-color);
 }
 
 .card__ellipse {
@@ -202,6 +250,78 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.ellipse__icon {
+    color: var(--element-color);
+    font-size: 19px;
+}
+
+/**/
+
+.box {
+    background: var(--element-color);
+    border: 1px solid var(--border-default-color);
+    padding: 20px;
+}
+
+.box-heading {
+    align-items: center;
+    border-bottom: 1px solid var(--border-default-color);
+    display: flex;
+    height: 26px;
+    margin: 0 0 20px;
+    width: 100%;
+}
+
+.box-heading__title {
+    color: var(--text-primary-color);
+    font-family: var(--font-rajdhani);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.table {
+    width: 100%;
+}
+
+.table__tr {
+    border-bottom: 1px solid var(--border-default-color);
+    display: flex;
+}
+
+.table__tr th {
+    color: var(--text-primary-color);
+    font-family: var(--font-rajdhani);
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.table__tr td {
+    color: var(--text-primary-color);
+    font-family: var(--font-titillium-web);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.table__tr td a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.table__tr td a:hover {
+    text-decoration: underline;
+}
+
+.table__tr th,
+.table__tr td {
+    display: flex;
+    justify-content: start;
+}
+
+.table__cell {
+    padding: 8px 0 8px 0;
 }
 
 /**
