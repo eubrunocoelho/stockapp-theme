@@ -14,6 +14,8 @@
     --font-rajdhani: 'Rajdhani', sans-serif;
     --text-primary-color: #272a2d;
     --text-secondary-color: #717c86;
+    --text-warning-color: #ffc107;
+    --text-danger-color: #dc3545;
 }
 
 /**
@@ -21,6 +23,18 @@
  * MODIFIERS
  * =================================================================================
  */
+
+.text--warning {
+    color: var(--text-warning-color) !important;
+}
+
+.text--danger {
+    color: var(--text-danger-color) !important;
+}
+
+.mb--20 {
+    margin-bottom: 20px !important;
+}
 
 .mb--30 {
     margin-bottom: 30px !important;
@@ -40,6 +54,30 @@
 
 .fg--1 {
     flex-grow: 1 !important;
+}
+
+/**
+ * =================================================================================
+ * COMPONENTS
+ * =================================================================================
+ */
+
+.button {
+    background: var(--primary-color);
+    border: none;
+    border-radius: var(--border-default-radius);
+    color: var(--element-color);
+    cursor: pointer;
+    font-family: var(--font-rajdhani);
+    font-size: 16px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 0;
+    padding: 0 15px 0 15px;
+}
+
+.button:hover {
+    opacity: .9;
 }
 
 /**
@@ -398,6 +436,10 @@ body {
 
 .table__cell {
     padding: 8px 0 8px 0;
+}
+
+.action__icon {
+    padding: 0 7px 0 0;
 }
 
 /**
