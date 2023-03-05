@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.22, maximum-scale=1.0" />
+    <title>StockApp - Gerenciador de Estoque</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav container">
+            <div class="header-nav__stick">
+                <div class="header-nav__menu-button">
+                    <a href="./index.html"><i class="fa-solid fa-bars menu-button__icon"></i></a>
+                </div>
+                <a href="./index.html" class="header-nav__logo">StockApp</a>
+            </div>
+            <div class="header-nav__user-area">
+                <div class="user-area__ellipse"></div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main-heading container">
+            <h1 class="main-heading__title">Gestores</h1>
+            <span class="main-heading__breadcrumbs"><a class="breadcrumbs__link" href="./gestores.html">Gestores</a> / <a class="breadcrumbs__link" href="./index.html">Dashboard</a></span>
+        </div>
+        <section class="section container mb--30">
+            <div class="filter">
+                <div class="filter__search fg--1">
+                    <form action="#">
+                        <input type="text" class="search__input" placeholder="Pesquisar...">
+                        <button class="search__btn">
+                            <i class="fa-solid fa-magnifying-glass btn__icon"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="filter__order-by">
+                    <select class="order-by__select">
+                        <option>Todos</option>
+                        <option>Ativos</option>
+                        <option>Inativos</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <section class="section container mb--20">
+            <div class="box">
+                <div class="box-heading">
+                    <h1 class="box-heading__title">Lista de Gestores</h1>
+                </div>
+                <table class="table mb--20">
+                    <thead>
+                        <tr class="table__tr">
+                            <th class="table__cell tc--w50">ID</th>
+                            <th class="table__cell fg--1">Nome</th>
+                            <th class="table__cell tc--w210">Status</th>
+                            <th class="table__cell tc--w210" colspan="2">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table__tr">
+                            <td class="table__cell tc--w50">1</td>
+                            <td class="table__cell fg--1"><a href="#">Bruno Coelho</a></td>
+                            <td class="table__cell tc--w210 text--success">Ativo</td>
+                            <td class="table__cell tc--w105"><i class="fa-solid fa-marker text--warning action__icon"></i><a href="#" class="text--warning">Editar</a></td>
+                            <td class="table__cell tc--w105"><i class="fa-solid fa-user-minus text--danger action__icon"></i><a href="#" class="text--danger">Inativar</a></td>
+                        </tr>
+                        <tr class="table__tr">
+                            <td class="table__cell tc--w50">2</td>
+                            <td class="table__cell fg--1"><a href="#">John John</a></td>
+                            <td class="table__cell tc--w210 text--danger">Inativo</td>
+                            <td class="table__cell tc--w105"><i class="fa-solid fa-marker text--warning action__icon"></i><a href="#" class="text--warning">Editar</a></td>
+                            <td class="table__cell tc--w105"><i class="fa-solid fa-user-plus text--success action__icon"></i><a href="#" class="text--success">Ativar</a></td>
+                        </tr>
+                        <tr class="table__tr">
+                            <td class="table__cell tc--w50">3</td>
+                            <td class="table__cell fg--1"><a href="#">Vinícius Henrique</a></td>
+                            <td class="table__cell tc--w210 text--success">Ativo</td>
+                            <td class="table__cell tc--w105"><i class="fa-solid fa-marker text--warning action__icon"></i><a href="#" class="text--warning">Editar</a></td>
+                            <td class="table__cell tc--w105"><i class="fa-solid fa-user-minus text--danger action__icon"></i><a href="#" class="text--danger">Inativar</a></td>
+                        </tr>
+                        <tr class="table__tr">
+                            <td class="table__cell tc--w50">4</td>
+                            <td class="table__cell fg--1"><a href="#">Lucas Vaz</a></td>
+                            <td class="table__cell tc--w210 text--success">Ativo</td>
+                            <td class="table__cell tc--w105"><i class="fa-solid fa-marker text--warning action__icon"></i><a href="#" class="text--warning">Editar</a></td>
+                            <td class="table__cell tc--w105"><i class="fa-solid fa-user-minus text--danger action__icon"></i><a href="#" class="text--danger">Inativar</a></td>
+                        </tr>
+                        <tr class="table__tr">
+                            <td class="table__cell tc--w50">5</td>
+                            <td class="table__cell fg--1"><a href="#">Sabrina Alves</a></td>
+                            <td class="table__cell tc--w210 text--success">Ativo</td>
+                            <td class="table__cell tc--w105"><i class="fa-solid fa-marker text--warning action__icon"></i><a href="#" class="text--warning">Editar</a></td>
+                            <td class="table__cell tc--w105"><i class="fa-solid fa-user-minus text--danger action__icon"></i><a href="#" class="text--danger">Inativar</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="button">Adicionar Gestor</button>
+            </div>
+        </section>
+        <section class="section container">
+            <div class="pagination">
+                <ul class="pagination__list">
+                    <li class="pagination__item">
+                        <span class="pagination__link text--disabled">«</span>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link border--active">1</a>
+                    </li>
+                    <li class="pagination__item">
+                        <span class="pagination__link text--disabled">»</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-copy container">
+            <p class="copy__text">Copyright © 2023 <a href="" class="copy__link">StockApp</a>.</p>
+        </div>
+    </footer>
+</body>
+</html>

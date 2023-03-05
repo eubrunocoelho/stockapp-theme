@@ -14,6 +14,7 @@
     --font-rajdhani: 'Rajdhani', sans-serif;
     --text-primary-color: #272a2d;
     --text-secondary-color: #717c86;
+    --text-success-color: #58a585;
     --text-warning-color: #ffc107;
     --text-danger-color: #dc3545;
 }
@@ -23,6 +24,11 @@
  * MODIFIERS
  * =================================================================================
  */
+
+.text--success {
+    color: var(--text-success-color) !important;
+}
+
 
 .text--warning {
     color: var(--text-warning-color) !important;
