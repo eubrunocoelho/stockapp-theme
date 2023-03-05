@@ -32,7 +32,7 @@
             <h1 class="main-heading__title">#Livros</h1>
             <span class="main-heading__breadcrumbs"><a class="breadcrumbs__link" href="./index.html">Livros</a> / <a class="breadcrumbs__link" href="./index.html">Dashboard</a></span>
         </div>
-        <section class="section container">
+        <section class="section container mb--30">
             <div class="filter">
                 <div class="filter__search fg--1">
                     <form action="#">
@@ -50,6 +50,34 @@
                         <option>Saídas</option>
                     </select>
                 </div>
+            </div>
+        </section>
+        <section class="section container">
+            <div class="box">
+                <div class="box-heading">
+                    <h1 class="box-heading__title">Lista de Livros</h1>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr class="table__tr">
+                            <th class="table__cell tc--w50">ID</th>
+                            <th class="table__cell fg--1">Nome</th>
+                            <th class="table__cell tc--w210">Unidades</th>
+                            <th class="table__cell tc--w210">Editoras</th>
+                            <th class="table__cell tc--w210" colspan="2">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table__tr">
+                            <td class="table__cell tc--w50">1</td>
+                            <td class="table__cell fg--1"><a href="#">Senhor dos Anéis</a></td>
+                            <td class="table__cell tc--w210">1.280</td>
+                            <td class="table__cell tc--w210">Allen & Unwin</td>
+                            <td class="table__cell tc--w105"><a href="#">Editar</a></td>
+                            <td class="table__cell tc--w105"><a href="#">Deletar</a></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>
