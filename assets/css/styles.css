@@ -398,7 +398,7 @@ body {
     border-bottom: 1px solid var(--border-default-color);
     display: flex;
     height: 26px;
-    margin: 0 0 20px;
+    margin: 0 0 20px 0;
     width: 100%;
 }
 
@@ -407,6 +407,27 @@ body {
     font-family: var(--font-rajdhani);
     font-size: 18px;
     font-weight: 700;
+}
+
+/**
+ * =================================================================================
+ * SECTION - SAMPLE
+ * =================================================================================
+ */
+
+.sample {
+    border-bottom: 1px solid var(--border-default-color);
+    padding: 0 0 20px 0;
+    width: 100%;
+}
+
+.sample__text {
+    color: var(--text-primary-color);
+    font-family: var(--font-titillium-web);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: justify;
 }
 
 /**
