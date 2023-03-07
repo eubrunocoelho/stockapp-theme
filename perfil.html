@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.22, maximum-scale=1.0" />
+    <title>StockApp - Gerenciador de Estoque</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav container">
+            <div class="header-nav__stick">
+                <div class="header-nav__menu-button">
+                    <a href="./index.html"><i class="fa-solid fa-bars menu-button__icon"></i></a>
+                </div>
+                <a href="./index.html" class="header-nav__logo">StockApp</a>
+            </div>
+            <div class="header-nav__user-area">
+                <div class="user-area__ellipse"></div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main-heading container">
+            <h1 class="main-heading__title">Bruno Coelho</h1>
+            <span class="main-heading__breadcrumbs"><a class="breadcrumbs__link" href="./perfil.html">Bruno Coelho</a> / <a class="breadcrumbs__link" href="./gestores.html">Gestores</a> / <a class="breadcrumbs__link" href="./index.html">Dashboard</a></span>
+        </div>
+        <section class="section container">
+            <div class="box">
+                <div class="box-heading">
+                    <h1 class="box-heading__title">Bruno Coelho</h1>
+                </div>
+                <div class="profile mb--20">
+                    <div class="profile__avatar"></div>
+                    <div class="profile__description">
+                        <h1 class="description__name">Bruno Coelho</h1>
+                        <span class="description__email">eu.brunocoelho94@gmail.com</span>
+                    </div>
+                </div>
+                <div class="box-heading">
+                    <h1 class="box-heading__title">Informações Pessoais</h1>
+                </div>
+                <table class="table mb--20">
+                    <tbody>
+                        <tr class="table__tr">
+                            <th class="table__cell tc--w210">Nome</th>
+                            <td class="table__cell fg--1">Bruno Coelho</td>
+                        </tr>
+                        <tr class="table__tr">
+                            <th class="table__cell tc--w210">CPF</th>
+                            <td class="table__cell fg--1">000.000.000-00</td>
+                        </tr>
+                        <tr class="table__tr">
+                            <th class="table__cell tc--w210">E-mail</th>
+                            <td class="table__cell fg--1">eu.brunocoelho94@gmail.com</td>
+                        </tr>
+                        <tr class="table__tr">
+                            <th class="table__cell tc--w210">Função</th>
+                            <td class="table__cell fg--1">Administrador</td>
+                        </tr>
+                        <tr class="table__tr">
+                            <th class="table__cell tc--w210">Telefone</th>
+                            <td class="table__cell fg--1">(66) 4002-8922</td>
+                        </tr>
+                        <tr class="table__tr">
+                            <th class="table__cell tc--w210">Gênero</th>
+                            <td class="table__cell fg--1">Mascúlino</td>
+                        </tr>
+                        <tr class="table__tr">
+                            <th class="table__cell tc--w210">Status</th>
+                            <td class="table__cell fg--1">Ativo</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="operation-group mb--20">
+                    <button class="btn bg--danger">Inativar</button>
+                </div>
+                <div class="operation-group">
+                    <button class="btn bg--warning">Editar informações</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-copy container">
+            <p class="copy__text">Copyright © 2023 <a href="" class="copy__link">StockApp</a>.</p>
+        </div>
+    </footer>
+</body>
+</html>

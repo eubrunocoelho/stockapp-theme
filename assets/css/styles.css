@@ -8,8 +8,9 @@
     --background-color: #fafafa;
     --border-default-color: #d3d3d3;
     --border-default-radius: 6px;
-    --element-color: #fff;
     --primary-color: #0879ac;
+    --element-color: #fff;
+    --disabled-color: #dfdfdf;
     --font-titillium-web: 'Titillium Web', sans-serif;
     --font-rajdhani: 'Rajdhani', sans-serif;
     --text-primary-color: #272a2d;
@@ -521,6 +522,48 @@ body {
 
 .action__icon {
     padding: 0 7px 0 0;
+}
+
+/**
+ * =================================================================================
+ * SECTION - PROFILE
+ * =================================================================================
+ */
+
+.profile {
+    column-gap: 18px;
+    display: flex;
+    width: 100%;
+}
+
+.profile__avatar {
+    background: var(--disabled-color);
+    border: 1px solid var(--border-default-color);
+    border-radius: var(--border-default-radius);
+    height: 62px;
+    width: 62px;
+}
+
+.profile__description {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.description__name {
+    color: var(--text-primary-color);
+    font-family: var(--font-rajdhani);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.description__email {
+    color: var(--text-primary-color);
+    font-family: var(--font-titillium-web);
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 0 4px 0;
 }
 
 /**
