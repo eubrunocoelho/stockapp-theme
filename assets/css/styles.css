@@ -21,7 +21,7 @@
     --bg-success-color: #58a585;
     --bg-warning-color: #ffc107;
     --bg-danger-color: #dc3545;
-    --bg-overlay-color: rgba(48,51,54, .5);
+    --bg-overlay-color: rgba(48, 51, 54, .5);
 }
 
 /**
@@ -201,6 +201,7 @@ body {
 
 .side-navigation__close-button {
     align-items: center;
+    cursor: pointer;
     display: flex;
     height: 40px;
     justify-content: center;
@@ -307,6 +308,7 @@ body {
 
 .header-nav__menu-button {
     align-items: center;
+    cursor: pointer;
     display: flex;
     height: 40px;
     justify-content: center;
