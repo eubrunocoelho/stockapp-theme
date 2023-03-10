@@ -55,7 +55,7 @@
         </aside>
     </div>
     <header class="header">
-        <nav class="header-nav container">
+        <div class="header-nav container">
             <div class="header-nav__stick">
                 <div class="header-nav__menu-button" id="openMenu">
                     <span><i class="fa-solid fa-bars menu-button__icon"></i></span>
@@ -64,8 +64,26 @@
             </div>
             <div class="header-nav__user-area">
                 <div class="user-area__ellipse"></div>
+                <div class="user-area__dropdown-menu">
+                    <div class="dropdown-menu__heading">
+                        <h6 class="dropdown-menu__title">Bruno Coelho</h6>
+                        <p class="dropdown-menu__description">Administrador</p>
+                    </div>
+                    <nav class="dropdown-menu__nav">
+                        <ul class="dropdown-menu__list">
+                            <li class="dropdown-menu__item">
+                                <span class="dropdown-menu__icon-box"><i class="fa-solid fa-user dropdown-menu__icon"></i></span>
+                                <a href="" class="dropdown-menu__link">Perfil</a>
+                            </li>
+                            <li class="dropdown-menu__item">
+                                <span class="dropdown-menu__icon-box"><i class="fa-solid fa-circle-exclamation dropdown-menu__icon"></i></span>
+                                <a href="" class="dropdown-menu__link">Sair</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </nav>
+        </div>
     </header>
     <main class="main">
         <div class="main-heading container">
