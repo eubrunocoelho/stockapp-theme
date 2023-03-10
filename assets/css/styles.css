@@ -157,6 +157,7 @@ body {
 
 .window-overlay {
     background: var(--bg-overlay-color);
+    display: none;
     height: 100%;
     position: fixed;
     width: 100%;
@@ -171,6 +172,7 @@ body {
 
 .side-navigation {
     background: var(--bg-element-color);
+    display: none;
     height: 100vh;
     left: 0;
     overflow: auto;
