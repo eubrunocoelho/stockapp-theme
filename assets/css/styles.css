@@ -353,6 +353,7 @@ body {
     border: 1px solid var(--border-default-color);
     position: absolute;
     right: 0;
+    display: none;
 }
 
 .dropdown-menu__heading {
