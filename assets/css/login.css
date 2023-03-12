@@ -20,6 +20,28 @@
 
 /**
  * =================================================================================
+ * COMPONENTS
+ * =================================================================================
+ */
+
+.btn {
+    background: var(--primary-color);
+    border: none;
+    border-radius: var(--border-default-radius);
+    color: var(--bg-element-color);
+    cursor: pointer;
+    font-family: var(--font-rajdhani);
+    font-size: 16px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 0;
+    padding: 0 15px 0 15px;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+/**
+ * =================================================================================
  * BASE
  * =================================================================================
  */
@@ -42,11 +64,23 @@ body {
     min-height: 100%;
 }
 
+/**
+ * =================================================================================
+ * CONTAINER
+ * =================================================================================
+ */
+
 .container {
     height: 100%;
     margin: 0 auto;
     width: 1200px;
 }
+
+/**
+ * =================================================================================
+ * MAIN
+ * =================================================================================
+ */
 
 .main {
     display: flex;
@@ -56,8 +90,14 @@ body {
     width: 100%;
 }
 
+/**
+ * =================================================================================
+ * LOGIN BOX
+ * =================================================================================
+ */
+
 .login {
-    width: 328px;
+    width: 336px;
     padding: 0 20px 20px 20px;
     border: 1px solid var(--border-default-color);
     background: var(--bg-element-color);
@@ -68,6 +108,7 @@ body {
     width: 100%;
     border-bottom: 1px solid var(--border-default-color);
     display: flex;
+    margin: 0 0 20px 0;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -86,4 +127,42 @@ body {
     font-size: 14px;
     font-weight: 400;
     color: var(--text-secondary-color);
+}
+
+/**
+ * =================================================================================
+ * LOGIN FORM
+ * =================================================================================
+ */
+
+.form {
+    width: 100%;
+}
+
+.form__group {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 10px 0 0 0;
+}
+
+.form__label {
+    font-family: var(--font-rajdhani);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-primary-color);
+    margin: 0 0 10px 0;
+}
+
+.form__input {
+    height: 40px;
+    border-radius: var(--border-default-radius);
+    border: 1px solid var(--border-default-color);
+    font-family: var(--font-titillium-web);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-secondary-color);
+    padding: 0 18px 0 18px;
+    margin: 0 0 10px 0;
+    outline: none;
 }
