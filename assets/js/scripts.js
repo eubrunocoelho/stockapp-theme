@@ -26,10 +26,26 @@ if (windowOverlay && sideNavigation && openMenu) {
     });
 }
 
+const
+    clickUserMenu = document.querySelector('#clickUserMenu'),
+    userMenu = document.querySelector('#userMenu');
+
+if (clickUserMenu && userMenu) {
+    const className = 'd--block';
+
+    clickUserMenu.addEventListener('click', (e) => {
+        toggleClass(userMenu, className);
+    });
+}
+
 let displayToBlock = (element) => {
     element.style.display = 'block';
 }
 
 let displayToNone = (element) => {
     element.style.display = 'none';
+}
+
+let toggleClass = (element, className) => {
+    element.classList.toggle(className);
 }
