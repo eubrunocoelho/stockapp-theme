@@ -1,0 +1,89 @@
+/**
+ * =================================================================================
+ * VARIABLES
+ * =================================================================================
+ */
+
+:root {
+    --background-color: #fafafa;
+    --border-default-color: #d3d3d3;
+    --border-default-radius: 6px;
+    --primary-color: #0879ac;
+    --font-titillium-web: 'Titillium Web', sans-serif;
+    --font-rajdhani: 'Rajdhani', sans-serif;
+    --text-primary-color: #272a2d;
+    --text-secondary-color: #717c86;
+    --text-danger-color: #dc3545;
+    --bg-element-color: #fff;
+    --bg-danger-color: #dc3545;
+}
+
+/**
+ * =================================================================================
+ * BASE
+ * =================================================================================
+ */
+
+*,
+*::before,
+::after {
+    box-sizing: border-box !important;
+    text-rendering: optimizeLegibility !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004) !important;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    background: var(--background-color);
+    min-height: 100%;
+}
+
+.container {
+    height: 100%;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    min-width: 1200px;
+    padding: 80px 0 130px 0;
+    width: 100%;
+}
+
+.login {
+    width: 328px;
+    padding: 0 20px 20px 20px;
+    border: 1px solid var(--border-default-color);
+    background: var(--bg-element-color);
+}
+
+.login-heading {
+    height: 68px;
+    width: 100%;
+    border-bottom: 1px solid var(--border-default-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-heading__title {
+    font-family: var(--font-rajdhani);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0 0 4px 0;
+}
+
+.login-heading__description {
+    font-family: var(--font-titillium-web);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-secondary-color);
+}
